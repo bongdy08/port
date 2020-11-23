@@ -1,0 +1,556 @@
+
+
+/* 공통부분 */
+.wrap{
+    position: relative;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 1280px;
+}
+.container h2{
+    padding: 60px 0 30px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.container h3{
+    padding-bottom: 30px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.container h3:after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: rgb(34, 34, 34);
+}
+.container h4{
+    padding-bottom: 40px;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+}
+.txt-yellow{
+    font-size: 18px;
+    color: rgb(250, 231, 64);
+}
+
+
+
+
+/* top-visual */
+.content .top-visual{
+    padding-top: 350px;
+    padding-bottom: 150px;
+    text-align: center;
+    background: url(../image/accessibility_img.jpg) no-repeat top center;
+}
+.content .top-visual p{
+    color: white;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+/* .accessibility1 */
+.content .accessibility1 .container .acc-list{
+    font-size: 0;
+}
+.content .accessibility1 .container .acc-list li{
+    display: inline-block;
+    width: calc(100% / 4);
+    text-align: center;
+    vertical-align: top;
+}
+.content .accessibility1 .container .acc-list li span{
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+}
+.content .accessibility1 .container .acc-list .acc_01 span{
+    background: url(../image/access_icons.png) no-repeat 0 0;
+}
+.content .accessibility1 .container .acc-list .acc_02 span{
+    background: url(../image/access_icons.png) no-repeat -190px 0;
+}
+.content .accessibility1 .container .acc-list .acc_03 span{
+    background: url(../image/access_icons.png) no-repeat -380px 0;
+}
+.content .accessibility1 .container .acc-list .acc_04 span{
+    background: url(../image/access_icons.png) no-repeat -570px 0;
+}
+.content .accessibility1 .container dl dt{
+    padding: 15px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .accessibility1 .container dl dd{
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+}
+
+/* .accessibility2 */
+.content .accessibility2{
+    background-color: rgb(244, 244, 244);
+}
+.content .accessibility2 .container{
+    margin-top: 90px;
+}
+/* .accessibility2 -> acc-guide-list */
+.content .accessibility2 .container .acc-guide-list li{
+    padding-bottom: 30px;
+}
+.content .accessibility2 .container .acc-guide-list li span{
+    display: inline-block;
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+}
+/* 못한거, 각 span에 사이즈 줄여서 이미지 넣기*/
+.content .accessibility2 .container .acc-guide-list .acc-guide_01 span{
+    background: url(../image/access_icons.png) no-repeat 0 -336px;
+    background-size: 420px 500px;
+}
+.content .accessibility2 .container .acc-guide-list .acc-guide_02 span{
+    background: url(../image/access_icons.png) no-repeat -84px -336px;
+    background-size: 420px 500px;;
+}
+.content .accessibility2 .container .acc-guide-list .acc-guide_03 span{
+    background: url(../image/access_icons.png) no-repeat -168px -336px;
+    background-size: 420px 500px;;
+}
+.content .accessibility2 .container .acc-guide-list .acc-guide_04 span{
+    background: url(../image/access_icons.png) no-repeat -252px -336px;
+    background-size: 420px 500px;;
+}
+.content .accessibility2 .container .acc-guide-list .acc-guide_05 span{
+    background: url(../image/access_icons.png) no-repeat -0px -420px;
+    background-size: 420px 500px;;
+}
+.content .accessibility2 .container .acc-guide-list .acc-guide_06 span{
+    background: url(../image/access_icons.png) no-repeat -84px -420px;
+    background-size: 420px 500px;;
+}
+.content .accessibility2 .container .acc-guide-list .acc-guide_07 span{
+    background: url(../image/access_icons.png) no-repeat -168px -420px;
+    background-size: 420px 500px;;
+}
+
+.content .accessibility2 .container .acc-guide-list li dl{
+    display: inline-block;
+}
+.content .accessibility2 .container .acc-guide-list li dl dt{
+    padding: 0 0 10px;
+    color: rgb(102, 102, 102);
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .accessibility2 .container .acc-guide-list li dl dd{
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+}
+
+/* .accessibility2 -> acc-guideline-list */
+.content .accessibility2 .container .acc-guideline-list li{
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.content .accessibility2 .container .acc-guideline-list li:last-child{
+    border-bottom: 0;
+}
+.content .accessibility2 .container .acc-guideline-list li > span{
+    display: inline-block;
+    margin: 40px 30px 40px 0;
+    width: 180px;
+    height: 180px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_01 > span{
+    background: url(../image/access_icons.png) no-repeat 0 -380px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_02 > span{
+    background: url(../image/access_icons.png) no-repeat -190px -380px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_03 > span{
+    background: url(../image/access_icons.png) no-repeat -380px -380px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_04 > span{
+    background: url(../image/access_icons.png) no-repeat -570px -380px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_05 > span{
+    background: url(../image/access_icons.png) no-repeat -760px -380px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_06 > span{
+    background: url(../image/access_icons.png) no-repeat 0 -570px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_07 > span{
+    background: url(../image/access_icons.png) no-repeat -190px -570px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_08 > span{
+    background: url(../image/access_icons.png) no-repeat -380px -570px;
+}
+.content .accessibility2 .container .acc-guideline-list .acc-guideline_09 > span{
+    background: url(../image/access_icons.png) no-repeat -570px -570px;
+}
+.content .accessibility2 .container .acc-guideline-list dl dt a{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.content .accessibility2 .container .acc-guideline-list dl dt .more{
+    padding: 5px 7px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(117, 117, 117);
+}
+.content .accessibility2 .container .acc-guideline-list dl dd{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* .accessibility3 */
+.content .accessibility3 .container .quiz_pan_wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    background-color: rgb(244, 244, 244);
+}
+.content .accessibility3 .container .quiz_pan{
+    /* display: inline-block; */
+    text-align: center;
+}
+.content .accessibility3 .container .quiz_pan li{
+    margin: 30 0px;
+}
+/* .accessibility3 -> top layout */
+.content .accessibility3 .container .first-btn{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 100;
+}
+.content .accessibility3 .container .first-btn::before{
+    content: "";
+    display: inline-block;
+    margin-right: 7px;
+    width: 27px;
+    height: 27px;
+    background: url(../image/icon_home.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .first-btn a{
+    font-size: 20px;
+    color: rgb(103, 103, 103);
+}
+.content .accessibility3 .container .quiz_pan .q-top,
+.content .accessibility3 .container .quiz_pan .a-top
+{
+    text-align: left;
+    padding: 30px 0 15px 260px;
+}
+.content .accessibility3 .container .quiz_pan .num{
+    padding: 0 8px;
+    font-size: 24px;
+    color: rgb(244, 244, 244);
+    font-weight: 600;
+    background-color: rgb(103, 103, 103);
+    border-radius: 20px;
+}
+.content .accessibility3 .container .quiz_pan .question{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 26px;
+    color: rgb(103, 103, 103);
+    font-weight: 500;
+    text-align: left;
+    vertical-align: top;
+}
+/* .accessibility3 -> middle layout */
+.content .accessibility3 .container .quiz_pan .q-middle,
+.content .accessibility3 .container .quiz_pan .a-middle{
+    display: inline-block;
+}
+.content .accessibility3 .container .quiz_pan .ex{
+    padding: 35px 40px;
+    width: 680px;
+    height: 280px;
+    background-color: white;
+    text-align: left;
+   
+}
+.content .accessibility3 .container .quiz_pan .ex li{
+    height: 25%;
+}
+.content .accessibility3 .container .quiz_pan .ex p{
+    width: 620px;
+    font-size: 16px;
+    padding-left: 28px;
+    white-space: pre-wrap;
+}
+input[type="radio"]{
+    overflow:hidden;
+	position:absolute;
+	z-index:-1;
+	width:1px;
+	height:1px;
+	color:transparent;
+}
+input[type="radio"]  + p{
+    content: "";
+    display: inline-block;
+    margin:10px 20px 10px 0;
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon_rd_off.png) no-repeat 0 0;
+    cursor: pointer;
+}
+input[type="radio"]:checked + p{
+    background: url(../image/icon_rd_on.png) no-repeat 0 0;
+    color: rgb(0, 139, 9);
+    font-weight: 700;
+}
+.img-box{
+    float: left;
+    margin-right: 20px;
+}
+input[type="text"]{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.a5 input[type="text"]{
+    color: rgb(78, 134, 82);
+    font-weight: 700;
+    background-color: rgb(234, 234, 234);
+}
+/* 질문 layout */
+/* 문제1, 답1 layout */
+.content .accessibility3 .container .quiz_pan .middle1 span{
+    display: inline-block;
+    margin: 20px 0;
+    width: 680px;
+    height: 171px;
+    background: url(../image/img_quiz01.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .quiz_pan .middle2{
+    
+    padding: 10px;
+    width: 680px;
+    background-color: white;
+}
+.content .accessibility3 .container .quiz_pan  .middle2 span{
+    font-size: 20px;
+}
+.content .accessibility3 .container .quiz_pan .q-middle .middle2 input{
+    width: 520px;
+    font-size: 20px;
+    border: 0;
+}
+/* 문제3, 답3 layout */
+.content .accessibility3 .container .quiz_pan .q3 .ex li,
+.content .accessibility3 .container .quiz_pan .a3 .ex li{
+    height: 20%;
+}
+
+.content .accessibility3 .container .quiz_pan .q3 .ex li input[type="radio"] + p,
+.content .accessibility3 .container .quiz_pan .a3 .ex li input[type="radio"] + p{
+    display: inline-block;
+    padding-left: 50px;
+    width: 155px;
+}
+
+.q3 .ex li:first-child .txt,
+.a3 .ex li:first-child .txt{
+    padding-left: 55px;
+    padding-right: 89px;
+    font-size: 16px;
+}
+
+.box{
+    font-size: 12px;
+    background-color: rgb(244, 244, 244);
+    padding: 6px;
+    width: 400px;
+    display: inline-block;
+}
+
+.content .accessibility3 .container .quiz_pan .q3 .ex li:nth-child(4) input[type="radio"] + p.txt,
+.content .accessibility3 .container .quiz_pan .a3 .ex li:nth-child(4) input[type="radio"] + p.txt{
+    padding-left: 0;
+    width: 42px;
+    margin-right: 0;
+}
+
+.content .accessibility3 .container .quiz_pan .q3 .ex li:nth-child(4) .box{
+    width: 534px;
+}
+
+
+.content .accessibility3 .container .quiz_pan .a3 .ex li:nth-child(4) .box{
+    color: rgb(0, 139, 9);
+    font-weight: 700;
+    width: 534px;
+}
+
+
+/* 문제5, 답5 layout */
+.q5 .ex li,
+.a5 .ex li{
+    display: inline-block;
+    padding: 70px 0 0 26px;
+}
+/* 문제9, 답9 layout */
+.content .accessibility3 .container .quiz_pan .q9 .ex li,
+.content .accessibility3 .container .quiz_pan .a9 .ex li{
+    height: 50%;
+    display: inline-block;
+    width: 50%;
+}
+
+.content .accessibility3 .container .quiz_pan .q9 .ex p,
+.content .accessibility3 .container .quiz_pan .a9 .ex p{
+    padding-left: 40px;
+}
+
+.content .accessibility3 .container .quiz_pan .ex label.choice-body{
+    display: inline-block;
+    margin-left: 40px;
+    width: 250px;
+    background-color: rgb(244, 244, 244);
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px;
+}
+/* .accessibility3 -> bottom layout */
+.content .accessibility3 .container .quiz_pan .q-bottom button{
+    display: inline-block;
+    margin: 30px 0;
+    width: 450px;
+    height: 65px;
+    border: 0;
+    background-color: rgb(0, 139, 9);
+    font-size: 20px;
+    color: white;
+}
+.content .accessibility3 .container .quiz_pan .a-bottom{
+    display: block;
+    padding: 20px 0;
+    margin: 30px 0;
+    width: 100%;
+    background-color: rgb(103, 103, 103);
+}
+.content .accessibility3 .container .quiz_pan .a-bottom p{
+    font-size: 18px;
+    color: white;
+}
+/* .accessibility3 -> middle image */
+.content .accessibility3 .container .quiz_pan .q5 .q-middle .ex .img-box{
+    display: inline-block; 
+    width: 255px;
+    height: 197px;
+    background: url(../image/img_quiz05.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .quiz_pan .a5 .a-middle .ex .img-box{
+    display: inline-block; 
+    width: 255px;
+    height: 197px;
+    background: url(../image/img_ans05.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .quiz_pan .q6 .q-middle .ex .img-box,
+.content .accessibility3 .container .quiz_pan .a6 .a-middle .ex .img-box{
+display: inline-block; 
+width: 242px;
+height: 229px;
+background: url(../image/img_quiz06.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .quiz_pan .q7 .q-middle .ex .img-box,
+.content .accessibility3 .container .quiz_pan .a7 .a-middle .ex .img-box{
+display: inline-block; 
+width: 321px;
+height: 170px;
+background: url(../image/img_quiz07.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .quiz_pan .q9 .q-middle .ex .img-box,
+.content .accessibility3 .container .quiz_pan .a9 .a-middle .ex .img-box{
+display: inline-block; 
+width: 270px;
+height: 190px;
+background: url(../image/img_quiz09.png) no-repeat 0 0;
+}
+.content .accessibility3 .container .quiz_pan_wrap .page{
+    margin-top: -30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.content .accessibility3 .container .quiz_pan_wrap .page strong{
+    
+    color: rgb(0, 139, 9);
+    font-weight: 700;
+}
+
+
+
+/* accessibility4 */
+.content .accessibility4 .container .acc-support-list li{
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.content .accessibility4 .container .acc-support-list li:last-child{
+    border-bottom: 0;
+}
+.content .accessibility4 .container .acc-support-list li .gal{
+    display: inline-block;
+    margin: 40px 30px 40px 0;
+    width: 180px;
+    height: 180px;
+}
+.content .accessibility4 .container .acc-support-list .acc-support_01 .gal{
+    background: url(../image/access_icons.png) no-repeat 0 -190px;
+}
+.content .accessibility4 .container .acc-support-list .acc-support_02 .gal{
+    background: url(../image/access_icons.png) no-repeat -190px -190px;
+}
+.content .accessibility4 .container .acc-support-list .acc-support_03 .gal{
+    background: url(../image/access_icons.png) no-repeat -380px -190px;
+}
+.content .accessibility4 .container .acc-support-list .acc-support_04 .gal{
+    background: url(../image/access_icons.png) no-repeat -570px -190px;
+}
+.content .accessibility4 .container .acc-support-list dl{
+    display: inline-block;
+}
+.content .accessibility4 .container .acc-support-list dl dt{
+    font-size: 28px;
+    font-weight: 500;
+}
+.content .accessibility4 .container .acc-support-list dl dd{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.content .accessibility4 .container .acc-support-list li .acc-btn{
+    margin-top: 40px;
+}
+.content .accessibility4 .container .acc-support-list li .acc-btn span{
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: rgb(234, 234, 234);
+}
+.content .accessibility4 .container .acc-support-list li .acc-btn span:hover{
+   background-color: rgb(210, 210, 210);
+}
+.content .accessibility4 .container .acc-support-list li .acc-btn span a{
+    font-size: 14px;
+}
+
+/* footer */
+footer{
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+}
+footer p{
+    color: rgb(195, 195, 195);
+    font-size: 14px;
+    text-align: center;
+}

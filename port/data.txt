@@ -1,0 +1,30 @@
+var data = {
+
+    [
+        {
+            html: 
+            "
+            <div class="open">
+                <a href="javascript:;" class="btn">코드보기</a>
+            </div>
+            ",
+            css: "",
+            js: ""
+        },
+        {
+            html: "",
+            css: "",
+            js: ""
+        },
+        {
+            html: "",
+            css: "",
+            js: ""
+        },
+        {
+            html: "",
+            css: "",
+            js: ""
+        }
+    ]
+}

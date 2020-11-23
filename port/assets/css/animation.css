@@ -1,0 +1,182 @@
+/* .sec4 애니메이션1 */
+.sec4 .panel .cont1 div{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    box-shadow:
+        0 0 1vw #fff,
+        -1vw 0 5vw #f0f,
+        1vw 0 5vw #0ff,
+        inset 0 0 3vw #fff,
+        inset 3vw 0 2vw #f0f,
+        inset -3vw 0 2vw #0ff,
+        inset 3vw 0 10vw #f0f,
+        inset -3vw 0 10vw #0ff;
+    animation: pulsate 6s linear infinite;
+}
+@keyframes pulsate {
+    50% {
+      box-shadow:
+        0 0 1vw #fff,
+        1vw 0 5vw #f0f,
+        -1vw 0 5vw #0ff,
+        inset 0 0 3vw #fff,
+        inset -3vw 0 2vw #f0f,
+        inset 3vw 0 2vw #0ff,
+        inset -3vw 0 10vw #f0f,
+        inset 3vw 0 10vw #0ff;
+    }
+}
+/* .sec4 애니메이션2 */
+.sec4 .panel .cont2 .watch-face {
+    height: 8vw;
+    width: 8vw;
+    animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+}
+.sec4 .panel .cont2 .circle {
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: screen;
+    transform: translate(0, 0);
+    animation: center 6s infinite;
+}
+.sec4 .panel .cont2 .circle:nth-child(odd) {background: #61bea2;}
+  
+.sec4 .panel .cont2 .circle:nth-child(even) {background: #529ca0;}
+
+.sec4 .panel .cont2 .circle:nth-child(1) {
+    animation: circle-1 4s ease alternate infinite;
+}
+.sec4 .panel .cont2 .circle:nth-child(2) {
+    animation: circle-2 4s ease alternate infinite;
+}
+.sec4 .panel .cont2 .circle:nth-child(3) {
+    animation: circle-3 4s ease alternate infinite;
+}
+.sec4 .panel .cont2 .circle:nth-child(4) {
+    animation: circle-4 4s ease alternate infinite;
+}
+.sec4 .panel .cont2 .circle:nth-child(5) {
+    animation: circle-5 4s ease alternate infinite;
+}
+.sec4 .panel .cont2 .circle:nth-child(6) {
+    animation: circle-6 4s ease alternate infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(.15) rotate(180deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes circle-1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-2vw, -3vw);
+    }
+}
+@keyframes circle-2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(2vw, 3vw);
+    }
+}
+@keyframes circle-3 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-4vw, 0);
+    }
+}
+@keyframes circle-4 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(4vw, 0);
+    }
+}
+@keyframes circle-5 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-2vw, 3vw);
+    }
+}
+@keyframes circle-6 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(2vw, -3vw);
+    }
+}
+/* .sec4 애니메이션3 */
+.sec4 .panel .cont3 .heart {
+    width: 22vw; height: 22vw;
+    margin-top: 13%;
+}
+.sec4 .panel .cont3 .heart .heart_path {
+    fill: transparent;
+    stroke: yellow;
+    stroke-dasharray: 0;
+    stroke-width: 10px;
+    animation: groove 6s 3000 alternate;
+}
+@keyframes groove {
+    0%,
+        100% {
+        stroke-dasharray: 1600;
+    }
+    25%,
+        75% {
+        stroke-dasharray: 70;
+    }
+    50% {
+        stroke-dasharray: 150;
+    }
+} 
+
+/* .sec4 애니메이션4 */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,400");
+:root {
+  --x: 0px;
+  --y: 0px;
+}
+.sec4 .panel .cont4 .hero {
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 2;
+    text-transform: lowercase; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec4 .panel .cont4 .hero h1 {
+    font-size: 8vw;
+    color: rgba(34, 34, 34, 0.9);
+    animation: flex 3s ease-in-out alternate infinite;
+}
+@keyframes flex {
+    0% {
+        text-shadow: calc(var(--x)*-1) calc(var(--y)*-1) 0 rgba(145, 249, 229, 0.7),
+        calc(var(--x)*-1.5) calc(var(--y)*1.5) 0 rgba(118, 247, 191, 0.7),
+        calc(var(--y)*-2) calc(var(--x)*-2) 0 rgba(0, 255, 255, .7),
+        var(--x) var(--y) 0 rgba(95, 221, 157, 0.7);
+    }
+    100% {
+        text-shadow: var(--x) var(--y) 0 rgba(145, 249, 229, 0.7),
+        var(--x) calc(var(--y)*-1) 0 rgba(118, 247, 191, 0.7),
+        var(--y) var(--x) 0 rgba(0, 255, 255, .7),
+        calc(var(--x)*-2) calc(var(--y)*-2) 0 rgba(95, 221, 157, 0.7);
+    }
+}

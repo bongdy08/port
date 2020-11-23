@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>네이버 접근성 페이지</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/accessibility_layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/practice_accessibility.naver_accessibility.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <header class="container">
+                <div class="nav">
+                    <div class="left-side">
+                        <a href="practice_accessibility.naver_main.html"><span>NAVER 접근성</span></a>
+                    </div>
+                    <div class="right-side">
+                        <a href="practice_accessibility.naver_service.html"><span>서비스별 가이드</span></a>
+                        <a href="practice_accessibility.naver_accessibility.html"><span class="on">접근성 가이드</span></a>
+                        <a href="practice_accessibility.naver_assistance.html"><span>보조기술</span></a>
+                    </div>                
+                </div>
+            </header>
+        </div>
+
+        <section class="content">
+            <div class="top-visual">
+                <p>2007년 장애인차별금지법 제정 후, 웹에서 제공하는 전자정보를 장애 환경에 <br>
+                    상관없이 동등한 수준으로 제공해야한다는 법이 시행되었습니다. <br>
+                    이에 국가에서는 웹 접근성 지침(KWCAG)을 발표하여 모든 웹 사이트가 <br>
+                    웹 접근성을 준수하도록 권고하고 있습니다.</p>
+            </div>
+            
+            <div class="accessibility1">
+                <section class="container">
+                    <h2>정보 접근성이란?</h2>
+                    <h3>모든 사용자를 위한 더 편리한 서비스</h3>
+                    <h4>정보 접근성은 모든 사용자가 특정 환경이나 신체적 장애에 상관없이 웹 사이트나 애플리케이션에서 제공하는 <br>
+                        모든 정보에 동등하게 접근하고 이용할 수 있도록 보장해 주는 것입니다. <br>
+                        장애인뿐만 아니라 고령자, 비장애인도 접근성의 대상이 되며 4가지 핵심원리는 다음과 같습니다.                  
+                    </h4>
+                    <ul class="acc-list">
+                        <li class="acc_01">
+                            <span></span>
+                            <dl>
+                                <dt>인식의 용이성</dt>
+                                <dd>모든 콘텐츠는 사용자가 <br> 인식할 수 있어야 한다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc_02">
+                            <span></span>
+                            <dl>
+                                <dt>운용의 용이성</dt>
+                                <dd>사용자 인터페이스 <br> 구성 요소는 조작 가능하고 <br> 내비게이션할 수 있어야 한다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc_03">
+                            <span></span>
+                            <dl>
+                                <dt>이해의 용이성</dt>
+                                <dd>콘텐츠는 장애유무에 <br> 관계없이 이해할 수 <br> 있게 구성되어야 한다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc_04">
+                            <span></span>
+                            <dl>
+                                    <dt>견고성</dt>
+                                    <dd>웹 콘텐츠는 미래의 기술로도 <br> 접근할 수 있도록 견고하게 <br> 만들어야 한다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="accessibility2">
+                <section class="container">
+                    <h2>정보 접근성 가이드</h2>
+                    <h3>다양한 사용자를 향한 폭넓은 이해</h3>
+                    <ul class="acc-guide-list">
+                        <li class="acc-guide_01 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt>전맹 사용자</dt>
+                                <dd>시각을 통해 화면의 이미지 정보를 인식하기 어려워서 화면의 텍스트를 음성으로 읽어주는 화면 낭독 프로그램(스크린 리더)를 이용합니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guide_02 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt>색각이상 사용자</dt>
+                                <dd>특정한 색 또는 색상 구별 자체가 어려워 색으로만 구분자를 표시할 경우 인지하기 어렵습니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guide_03 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt>고령자와 약시자</dt>
+                                <dd>통상적인 크기의 폰트는 인식하기 어려워 폰트 확대 기능 또는 프로그램이 필요합니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guide_04 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt>청각장애 사용자</dt>
+                                <dd>동영상의 음성, 오디오, 알람과 같은 청각 콘텐츠는 인식할 수 없습니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guide_05 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt>뇌병변 장애 및 지체장애 사용자</dt>
+                                <dd>마우스와 같은 포인팅 장치를 이용하지 않는 사용자는 키보드만으로도 모든 정보의 접근 및 조작이 가능해야 합니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guide_06 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt>일시적 장애를 겪고 있는 사용자</dt>
+                                <dd>사고로 인해 일시적으로 신체의 일부를 활용하지 못하거나 갑자기 극심한 불안감을 느껴 발작을 일으키는 사용자도 고려해야 합니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guide_07 vertical-top">
+                            <span></span>
+                            <dl>
+                                <dt>일반 사용자</dt>
+                                <dd>직사광선이나 조명이 반사되는 장소에 설치된 모니터에 표시되는 콘텐츠는 인식하기 어렵습니다. <br>
+                                    매우 작은 폰트를 사용하는 콘텐츠는 알아보기 힘듭니다. <br>
+                                    흑백 모니터를 사용할 경우엔 콘텐츠의 색을 구별하기 어렵습니다. <br>
+                                    스피커가 고장난 상황이나 소음이 매우 심한 환경에서 청각을 이용하는 영상이나 음성 콘텐츠는 감상하기 힘듭니다. <br>
+                                    한 손으로 물건을 들고 있는 경우, 나머지 한 손으로만 PC나 모바일을 조작해야 합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="container">
+                    <h3>정보 접근성 지침 이해하기</h3>
+                    <ul class="acc-guideline-list">
+                        <li class="acc-guideline_01 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">대체 텍스트<span class="more">자세히 보기</span></a></dt>
+                                
+                                <dd>눈으로 화면을 볼 수 없는 경우, 이미지에 대한 설명을 대체 텍스트로 입력하여 스크린리더를 통해 정보를 인식하게 도와줍니다. <br>
+                                    텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_02 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">자막 제공<span class="more">자세히 보기</span></a></dt>
+                                <dd>음성을 귀로 듣지 못할 경우, 시각을 이용해서 내용을 이해하므로 멀티미디어 콘텐츠에는 자막, 대본 또는 수화를 제공해야 합니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_03 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">콘텐츠 구분<span class="more">자세히 보기</span></a></dt>
+                                <dd>특정한 색을 구별할 수 없는 사용자나 흑백 디스플레이 사용자와 같이 색상만으로 콘텐츠를 구분하지 못할 경우, 다양한 감각을 통해서 <br>
+                                    인식하므로 화면에 표시되는 모든 정보는 두 가지 이상의 구분자가 필요합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_04 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">명도 대비<span class="more">자세히 보기</span></a></dt>
+                                <dd>저시력자, 고령자 등도 인식할 수 있도록 콘텐츠와 배경 간의 명도 대비는 4.5:1 이상이어야 합니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_05 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">초점 이동<span class="more">자세히 보기</span></a></dt>
+                                <dd>마우스와 같은 포인팅 장치를 이용하기 어려운 시각/지체 장애 사용자는 키보드만으로도 모든 정보의 접근 및 조작이 가능해야 하기 때문에 <br>
+                                    키보드에 의한 초점은 논리적으로 이동해야 하며 시각적으로 구별할 수 있어야 합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_06 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">조작 가능<span class="more">자세히 보기</span></a></dt>
+                                <dd>손떨림이 심하여 미세한 조작이 어려운 경우와 같이 운동 장애가 있는 경우에도 사용자 입력 및 컨트롤은 조작이 가능하도록 제공되어야 합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_07 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">재생 조절 가능<span class="more">자세히 보기</span></a></dt>
+                                <dd>손떨림이 심하여 미세한 조작이 어려운 경우와 같이 운동 장애가 있는 경우에도 사용자 입력 및 컨트롤은 조작이 가능하도록 제공되어야 합니다.
+
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_08 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">사용자 요구에 따른 실행<span class="more">자세히 보기</span></a></dt>
+                                <dd>시각이나 청각 장애가 있는 사용자가 직접 마우스로 클릭하거나 키보드로 입력하지 않고도 자동으로 팝업 창이 오픈되거나 새로운 기능이 실행되면 <br>
+                                    그것을 인지하기 어렵습니다. 그러므로 사용자가 의도하지 않은 기능(새 창, 초점에 의한 맥락 변화 등)은 실행되지 않아야 합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="acc-guideline_09 vertical-middle">
+                            <span></span>
+                            <dl>
+                                <dt><a href="">오류 정정<span class="more">자세히 보기</span></a></dt>
+                                <dd>화면 낭독 프로그램을 이용하는 (시각 장애)사용자의 경우, 입력 오류가 발생했을 때 무엇이 잘못 되었는지 알 수가 없어서 입력 전체를 포기할 가능 <br>
+                                    성이 있습니다. 그러므로 입력 오류가 발생할 경우 이를 쉽게 찾아서 정정할 수 있는 방법을 제공해야 합니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                    </ul>
+                </section>
+            </div>
+
+            <div class="accessibility3">
+                    <section class="container">
+                        <h2>접근성 퀴즈</h2>
+                        <h3>정보 접근성 얼마나 이해하셨나요?</h3>
+                        <h4>다음 문제를 보고 정보 접근성 지침에 맞게 답하세요.</h4>
+                        <div class="quiz_pan_wrap swiper-container">
+                            <span class="first-btn vertical-middle"><a href="javascript:;">처음으로</a></span>
+                            <ul class="quiz_pan swiper-wrapper">
+                                <!-- 문제1 -->
+                                <li data-page="1" class="q1 swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q1</span>
+                                        <span class="question">그래픽 배너에 대한 대체 텍스트를 넣어주세요.</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <div class="middle1">
+                                            <span></span>
+                                        </div>
+                                        <div class="middle2">
+                                            <span>&#60;alt="</span>
+                                            <input type="text">
+                                            <span>"&#62;</span>
+                                        </div>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button class="btn-input" type="button">입력 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답1 -->
+                                <li data-page="1" class="a1 swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q1</span>
+                                        <span class="question">그래픽 배너에 대한 대체 텍스트를 넣어주세요.</span>
+                                    </div>
+                                    <div class="a-middle">
+                                        <div class="middle1">
+                                            <span></span>
+                                        </div>
+                                        <div class="middle2">
+                                            <span class="answer">&#60;alt="  "&#62;</span>
+                                        </div>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p>정답은 &#60;<strong class="txt-yellow">alt="인공지능 스피커 프렌즈를 지금 만나보세요 구매하러 가기"</strong>&#62; 입니다.</p>
+                                    </div>
+                                </li>
+                                <!-- 문제2 -->
+                                <li data-page="2" class="q2  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q2</span>
+                                        <span class="question">동영상과 같은 음성 콘텐츠를 잘 듣지 못하는 <br>
+                                            청각장애 사용자를 위한 대체 수단이 아닌것은?</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <li class="vertical-middle">
+                                                <label for="q2_1">
+                                                    <input type="radio" name="q2" id="q2_1">
+                                                    <p>자막</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q2_2">
+                                                    <input type="radio" name="q2" id="q2_2">
+                                                    <p>수화</p>
+                                                </label>
+                                            </li>
+                                            <li class="correct vertical-middle">
+                                                <label for="q2_3">
+                                                    <input type="radio" name="q2" id="q2_3">
+                                                    <p>화면 낭독기</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q2_4">
+                                                    <input type="radio" name="q2" id="q2_4">
+                                                    <p>대본</p>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답2 -->
+                                <li data-page="2" class="a2  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q2</span>
+                                        <span class="question">동영상과 같은 음성 콘텐츠를 잘 듣지 못하는 <br>
+                                            청각장애 사용자를 위한 대체 수단이 아닌것은?</span>
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <li class="vertical-middle">
+                                                <label for="a2_1">
+                                                    <input type="radio" name="a2" id="a2_1" disabled>
+                                                    <p>자막</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a2_2">
+                                                    <input type="radio" name="a2" id="a2_2" disabled>
+                                                    <p>수화</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a2_3">
+                                                    <input type="radio" name="a2" id="a2_3" disabled checked>
+                                                    <p>화면 낭독기</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a2_4">
+                                                    <input type="radio" name="a2" id="a2_4" disabled>
+                                                    <p>대본</p>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p><strong class="txt-yellow">3번 화면 낭독기</strong>는 시각장애 사용자를 위한 대체 수단입니다.</p>
+                                    </div>
+                                </li>
+                                <!-- 문제3 -->
+                                <li data-page="3" class="q3  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q3</span>
+                                        <span class="question">다음은 색맹 사용자의 시각으로 본 회원가입 페이지 입니다. <br>
+                                            개선이 필요한 부분을 선택하세요.</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <li>
+                                                <span class="txt">이름</span>
+                                                <label class="box">실명 입력</label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q3_1">
+                                                    <input type="radio" name="q3" id="q3_1">
+                                                    <p class="txt">* 아이디</p>
+                                                </label>
+                                                <label for="q3_1" class="box">띄어쓰기 없는 영문, 숫자로만 6-20자</label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q3_2">
+                                                    <input type="radio" name="q3" id="q3_2">    
+                                                    <p class="txt">* 비밀번호</p>
+                                                </label>
+                                                <label for="q3_2" class="box">영문, 숫자, 특수문자 조합 8~12자</label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q3_3">
+                                                    <input type="radio" name="q3" id="q3_3">
+                                                    <p class="txt"></p>
+                                                </label>
+                                                <label for="q3_3" class="box">* 빨간 글씨는 필수 입력 항목입니다.</label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q3_4">
+                                                    <input type="radio" name="q3" id="q3_4">    
+                                                    <p class="txt">* 어린이 회원</p>
+                                                </label>
+                                                <label for="q3_4" class="box">14세 미만 (보호자 동의 후 가입 가능합니다.)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답3 -->
+                                <li data-page="3" class="a3  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q3</span>
+                                        <span class="question">다음은 색맹 사용자의 시각으로 본 회원가입 페이지 입니다. <br>
+                                            개선이 필요한 부분을 선택하세요.</span>
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <li>
+                                                    <span class="txt">이름</span>
+                                                    <label class="box">실명 입력</label>
+                                                </li>
+                                                <li class="vertical-middle">
+                                                    <label for="a3_1">
+                                                        <input type="radio" name="a3" id="a3_1" disabled>
+                                                        <p class="txt">* 아이디</p>
+                                                    </label>
+                                                    <label for="a3_1" class="box">띄어쓰기 없는 영문, 숫자로만 6-20자</label>
+                                                </li>
+                                                <li class="vertical-middle">
+                                                    <label for="a3_2">
+                                                        <input type="radio" name="a3" id="a3_2" disabled>    
+                                                        <p class="txt">* 비밀번호</p>
+                                                    </label>
+                                                    <label for="a3_2" class="box">영문, 숫자, 특수문자 조합 8~12자</label>
+                                                </li>
+                                                <li class="vertical-middle">
+                                                    <label for="a3_3">
+                                                        <input type="radio" name="a3" id="a3_3" disabled checked>
+                                                        <p class="txt"></p>
+                                                    </label>
+                                                    <label for="a3_3" class="box">* 빨간 글씨는 필수 입력 항목입니다.</label>
+                                                </li>
+                                                <li class="vertical-middle">
+                                                    <label for="a3_4">
+                                                        <input type="radio" name="a3" id="a3_4" disabled>    
+                                                        <p class="txt">* 어린이 회원</p>
+                                                    </label>
+                                                    <label for="a3_4" class="box">14세 미만 (보호자 동의 후 가입 가능합니다.)</label>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p>색을 구분하기 어려운 사용자는 색상으로만 안내하는 지시사항을 이해하기 어렵습니다. <br>
+                                        <strong class="txt-yellow">'*표시된 아이디와 비밀번호는 필수 입력 항목입니다.'</strong>와 같이 항목을 명확히 안내해야 합니다.</p>
+                                    </div>
+                                </li>
+                                <!-- 문제4 -->
+                                <li data-page="4" class="q4  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q4</span>
+                                        <span class="question">정보 접근성 지침 중 텍스트 콘텐츠의 명도 대비 기준에 <br>
+                                                해당하지 않는 것은?</span>
+                                        
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <li class="vertical-middle">
+                                                <label for="q4_1">
+                                                    <input type="radio" name="q4" id="q4_1">
+                                                    <p>1. 텍스트 콘텐츠와 배경 간의 명도 대비는 4.5대 1 이상이어야 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q4_2">
+                                                    <input type="radio" name="q4" id="q4_2">
+                                                    <p>2. 화면 확대가 가능하도록 구현한 텍스트의 명도대비는 3:1을 만족해야 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q4_3">
+                                                    <input type="radio" name="q4" id="q4_3">
+                                                    <p>3. 본문 콘텐츠에 단순히 장식 목적으로 사용한 텍스트는 이 항목의 적용을 받지 않는다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q4_4">
+                                                    <input type="radio" name="q4" id="q4_4">
+                                                    <p>4. 광고성 배너의 텍스트는 명도 대비와 상관없이 눈에 잘 띄기만 하면 된다.</p>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답4 -->
+                                <li data-page="4" class="a4  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q4</span>
+                                        <span class="question">다음은 색맹 사용자의 시각으로 본 회원가입 페이지 입니다. <br>
+                                            개선이 필요한 부분을 선택하세요.</span>
+                                        
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <li class="vertical-middle">
+                                                <label for="a4_1">
+                                                    <input type="radio" name="a4" id="a4_1" disabled>
+                                                    <p>1. 텍스트 콘텐츠와 배경 간의 명도 대비는 4.5대 1 이상이어야 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a4_2">
+                                                    <input type="radio" name="a4" id="a4_2" disabled>
+                                                    <p>2. 화면 확대가 가능하도록 구현한 텍스트의 명도대비는 3:1을 만족해야 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a4_3">
+                                                    <input type="radio" name="a4" id="a4_3" disabled>
+                                                    <p>3. 본문 콘텐츠에 단순히 장식 목적으로 사용한 텍스트는 이 항목의 적용을 받지 않는다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a4_4">
+                                                    <input type="radio" name="a4" id="a4_4" disabled checked>
+                                                    <p>4. 광고성 배너의 텍스트는 명도 대비와 상관없이 눈에 잘 띄기만 하면 된다.</p>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p>텍스트 및 이미지 텍스트와 배경간의 <strong class="txt-yellow">명도 대비는 4.5:1 이상</strong>이어야 한다.</p>
+                                    </div>
+                                </li>
+                                <!-- 문제5 -->
+                                <li data-page="5" class="q5  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q5</span>
+                                        <span class="question">바른 초점의 이동 방향을 표시된 숫자로 써주세요.</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li>
+                                                <label for="">
+                                                    <input type="text" size="1" maxlength="1">
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1">
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1">
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1">
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답5 -->
+                                <li data-page="5" class="a5  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q5</span>
+                                        <span class="question">바른 초점의 이동 방향을 표시된 숫자로 써주세요.</span>
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li>
+                                                <label for="">
+                                                    <input type="text" size="1" maxlength="1" value="5" readonly>
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1" value="4" readonly>
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1" value="3" readonly>
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1" value="1" readonly>
+                                                    <span>&#62;</span>
+                                                    <input type="text" size="1" maxlength="1" value="2" readonly>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p>초점은 <strong class="txt-yellow">5 - 4 - 3 - 1 - 2</strong> 순으로 이동해야 합니다.</p>
+                                    </div>
+                                </li>
+                                <!-- 문제6 -->
+                                <li data-page="6" class="q6  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q6</span>
+                                        <span class="question">다음 크기나 간격으로 인해 모바일 사용자에게 불편을 <br>
+                                                줄 수 있는 컨트롤은?</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li class="vertical-middle">
+                                                <label for="q6_1">
+                                                    <input type="radio" name="q6" id="q6_1">
+                                                    <p>1</p>
+                                                </input>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q6_2">
+                                                    <input type="radio" name="q6" id="q6_2">
+                                                    <p>2</p>
+                                                </input>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q6_3">
+                                                    <input type="radio" name="q6" id="q6_3">
+                                                    <p>3</p>
+                                                </input>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q6_4">
+                                                    <input type="radio" name="q6" id="q6_4">
+                                                    <p>4</p>
+                                                </input>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답6 -->
+                                <li data-page="6" class="a6  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q6</span>
+                                        <span class="question">다음 크기나 간격으로 인해 모바일 사용자에게 불편을 <br>
+                                            줄 수 있는 컨트롤은?</span>
+                                        
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li class="vertical-middle">
+                                                <label for="a6_1">
+                                                    <input type="radio" name="a6" id="a6_1" disabled>
+                                                    <p>1</p>
+                                                </input>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a6_2">
+                                                    <input type="radio" name="a6" id="a6_2" disabled checked>
+                                                    <p>2</p>
+                                                </input>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a6_3">
+                                                    <input type="radio" name="a6" id="a6_3" disabled>
+                                                    <p>3</p>
+                                                </input>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a6_4">
+                                                    <input type="radio" name="a6" id="a6_4" disabled>
+                                                    <p>4</p>
+                                                </input>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p><strong class="txt-yellow">버튼의 중심 간 간격은 9mm이상으로 제공</strong>하는 것이 좋습니다.</p>
+                                    </div>
+                                </li>
+                                <!-- 문제7 -->
+                                <li data-page="7" class="q7  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q7</span>
+                                        <span class="question">다음은 자동으로 변하는 배너가 있는 페이지입니다. <br>
+                                                여기에 꼭 필요한 컨트롤은 무엇일까요?</span>
+                                        
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li class="vertical-middle">
+                                                <label for="q7_1">
+                                                    <input type="radio" name="q7" id="q7_1">
+                                                    <p>1.본문 바로 가기 버튼</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q7_2">
+                                                    <input type="radio" name="q7" id="q7_2">
+                                                    <p>2.화면 밝기 조절 버튼</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q7_3">
+                                                    <input type="radio" name="q7" id="q7_3">
+                                                    <p>3.음량 조절 버튼</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q7_4">
+                                                    <input type="radio" name="q7" id="q7_4">
+                                                    <p>4.정지/재생 버튼</p>
+                                                </label>
+                                            </li>    
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답7 -->
+                                <li data-page="7" class="a7  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q7</span>
+                                        <span class="question">다음은 자동으로 변하는 배너가 있는 페이지입니다. <br>
+                                            여기에 꼭 필요한 컨트롤은 무엇일까요?</span>
+                                        
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li class="vertical-middle">
+                                                <label for="a7_1">
+                                                    <input type="radio" name="a7" id="a7_1" disabled>
+                                                    <p>1.본문 바로 가기 버튼</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a7_2">
+                                                    <input type="radio" name="a7" id="a7_2" disabled>
+                                                    <p>2.화면 밝기 조절 버튼</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a7_3">
+                                                    <input type="radio" name="a7" id="a7_3" disabled>
+                                                    <p>3.음량 조절 버튼</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="a7_4">
+                                                    <input type="radio" name="a7" id="a7_4" disabled checked>
+                                                    <p>4.정지/재생 버튼</p>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <strong class="txt-yellow">변화하는 콘텐츠는 일시정지시키고, 일시 정지 된 곳부터 다시 시작할 수 있어야 합니다.</strong>
+                                    </div>
+                                </li>
+                                <!-- 문제8 -->
+                                <li data-page="8" class="q8  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q8</span>
+                                        <span class="question">사용자가 의도하지 않은 기능이 자동으로 실행되어 <br>
+                                                혼란을 주는 경우를 선택하세요.</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <li class="vertical-middle">
+                                                <label for="q8_1">
+                                                    <input type="radio" name="q8" id="q8_1">
+                                                    <p>1. 선택 상자에서는 항목을 선택 후 [확인]버튼을 눌러야 다음 페이지로 이동할 수 있게 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q8_2">
+                                                    <input type="radio" name="q8" id="q8_2">
+                                                    <p>2. 전화 번호 입력과 같은 텍스트 입력 서식은 마지막 필드 입력 후에 자동으로 제출되게 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q8_3">
+                                                    <input type="radio" name="q8" id="q8_3">
+                                                    <p>3. 쿠폰 번호 입력과 같은 텍스트 입력 서식은 모든 필드를 입력 후에 [제출] 버튼을 눌러야 최종 제출이 되게 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="q8_4">
+                                                    <input type="radio" name="q8" id="q8_4">
+                                                    <p>4. 긴급 메세지는 자동으로 열리는 팝업 창 대신 페이지 내에 눈에 잘 띄는 곳에 배치하여 알린다.</p>
+                                                </label>
+                                            </li>                                     
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답8 -->
+                                <li data-page="8" class="a8  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q8</span>
+                                        <span class="question">다음은 자동으로 변하는 배너가 있는 페이지입니다. <br>
+                                            여기에 꼭 필요한 컨트롤은 무엇일까요?</span>
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <li class="vertical-middle">
+                                                <label for="">
+                                                    <input type="radio" name="a8" id="a8_1" disabled>
+                                                    <p>1. 선택 상자에서는 항목을 선택 후 [확인]버튼을 눌러야 다음 페이지로 이동할 수 있게 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="">
+                                                    <input type="radio" name="a8" id="a8_2" disabled checked>
+                                                    <p>2. 전화 번호 입력과 같은 텍스트 입력 서식은 마지막 필드 입력 후에 자동으로 제출되게 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="">
+                                                    <input type="radio" name="a8" id="a8_3" disabled>
+                                                    <p>3. 쿠폰 번호 입력과 같은 텍스트 입력 서식은 모든 필드를 입력 후에 [제출] 버튼을 눌러야 최종 제출이 되게 한다.</p>
+                                                </label>
+                                            </li>
+                                            <li class="vertical-middle">
+                                                <label for="">
+                                                    <input type="radio" name="a8" id="a8_4" disabled>
+                                                    <p>4. 긴급 메세지는 자동으로 열리는 팝업 창 대신 페이지 내에 눈에 잘 띄는 곳에 배치하여 알린다.</p>
+                                                </label>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p>마지막 입력값을 넣은 후 자동으로 제출되는 경우에는 입력 오류를
+                                                수정하기 어려우므로 <strong class="txt-yellow">별도 버튼은 제공해 주는 것이 좋습니다.</strong></p>
+                                    </div>
+                                </li>
+                                <!-- 문제9 -->
+                                <li data-page="9" class="q9  swiper-slide">
+                                    <div class="q-top">
+                                        <span class="num">Q9</span>
+                                        <span class="question">다음은 회원가입 페이지에서 사용자가 이름을 잘못 입력했을 경우 <br>
+                                                나타나는 오류 메세지입니다. 가장 적절한 메세지를 고르세요.</span>
+                                    </div>
+                                    <div class="q-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li>
+                                                <label for="q9_1">
+                                                    <input type="radio" name="q9" id="q9_1">
+                                                    <p class="choice-header">1. 입력 오류 메세지</p>                                                    
+                                                </label>
+                                                <label for="q9_1" class="choice-body">잘못 입력했습니다. <br>다시 입력하시고 [가입하기]버튼을 <br>눌러주세요.</label>
+                                            </li>
+                                            <li>
+                                                <label for="q9_2">
+                                                    <input type="radio" name="q9" id="q9_2">
+                                                    <p class="choice-header">2. 입력 오류 메세지</p>
+                                                </label>
+                                                <label for="q9_2" class="choice-body">'이름'을 다시 입력해주세요. <br/>띄어쓰기 없이 한글 또는 영문으로 <br/>입력해주세요.</label>
+                                            </li>                                    
+                                        </ul>
+                                    </div>
+                                    <div class="q-bottom">
+                                        <button type="button">선택 완료</button>
+                                    </div>
+                                </li>
+                                <!-- 답9 -->
+                                <li data-page="9" class="a9  swiper-slide">
+                                    <div class="a-top">
+                                        <span class="num">Q9</span>
+                                        <span class="question">다음은 회원가입 페이지에서 사용자가 이름을 잘못 입력했을 경우 <br>
+                                            나타나는 오류 메세지입니다. 가장 적절한 메세지를 고르세요.</span>
+                                    </div>
+                                    <div class="a-middle">
+                                        <ul class="ex">
+                                            <span class="img-box"></span>
+                                            <li >
+                                                <label for="a9_1">
+                                                    <input type="radio" name="a9" id="a9_1" disabled>
+                                                    <p class="choice-header">1. 입력 오류 메세지</p>
+                                                </label>
+                                                <label for="a9_1" class="choice-body">잘못 입력했습니다. <br>다시 입력하시고 [가입하기]버튼을 <br>눌러주세요.</label>
+                                            </li>
+                                            <li>
+                                                <label for="a9_2">
+                                                    <input type="radio" name="a9" id="a9_2" disabled checked>
+                                                    <p class="choice-header">2. 입력 오류 메세지</p>
+                                                </label>
+                                                <label for="a9_2" class="choice-body">'이름'을 다시 입력해주세요. <br/>띄어쓰기 없이 한글 또는 영문으로 <br/>입력해주세요.</label>
+                                            </li>                                                  
+                                        </ul>
+                                    </div>
+                                    <div class="a-bottom">
+                                        <p>사용자가 잘못 입력했을 경우에는 <strong class="txt-yellow">어느 부분에서 어떤 오류가 났는지
+                                                알려 주어야 하고 이를 정정할 수 있는 방법을 제공</strong>해야 합니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="page"><p><strong>1</strong>/9</p></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="accessibility4">
+                        <section class="container">
+                            <h2>접근성 지원 도구</h2>
+                            <ul class="acc-support-list">
+                                <li class="acc-support_01 vertical-middle">
+                                    <span class="gal"></span>
+                                    <dl>
+                                        <dt>스크린 리더</dt>
+                                        <dd>컴퓨터나 모바일을 사용할 때 화면에 표시되는 입출력 정보를 음성으로 알려주는 프로그램입니다.</dd>
+                                        <div class="acc-btn">
+                                            <span><a href="javascript:;">센스리더</a></span>
+                                            <span><a href="javascript:;">NVDA</a></span>
+                                            <span><a href="javascript:;">JAWS</a></span>
+                                            <span><a href="javascript:;">TalkBack</a></span>
+                                            <span><a href="javascript:;">VoiceOver</a></span>
+                                        </div>
+                                    </dl>
+                                </li>
+                                <li class="acc-support_02 vertical-middle">
+                                    <span class="gal"></span>
+                                    <dl>
+                                        <dt>명도 대비</dt>
+                                        <dd>전경색과 배경색의 명도 차이를 비교할 수 있게 도와주는 확장 프로그램과 화면을 고대비로 전환할 수 있는 프로그램입니다.</dd>
+                                        <div class="acc-btn">
+                                            <span><a href="javascript:;">Colour Contrast Analyser</a></span>
+                                            <span><a href="javascript:;">Contrast Ratio</a></span>
+                                            <span><a href="javascript:;">고대비</a></span>
+                                        </div>
+                                    </dl>
+                                </li>
+                                <li class="acc-support_03 vertical-middle">
+                                    <span class="gal"></span>
+                                    <dl>
+                                        <dt>접근성 자동 진단</dt>
+                                        <dd>접근성을 개선이 필요한 부분을 자동으로 검출해주는 프로그램입니다.</dd>
+                                        <div class="acc-btn">
+                                            <span><a href="javascript:;">PC(WAVE)</a></span>
+                                            <span><a href="javascript:;">모바일(Android)</a></span>
+                                        </div>
+                                    </dl>
+                                </li>
+                                <li class="acc-support_04 vertical-middle">
+                                    <span class="gal"></span>
+                                    <dl>
+                                        <dt>웹 브라우저 개발자 도구</dt>
+                                        <dd>웹 콘텐츠 구성 요소를 탐색할 수 있으며 대부분의 브라우저가 지원합니다.</dd>
+                                        <div class="acc-btn">
+                                            <span><a href="javascript:;">(Chrome) Web Developer</a></span>
+                                            <span><a href="javascript:;">(Firefox) Web Developer</a></span>
+                                            <span><a href="javascript:;">Firebug</a></span>
+                                        </div>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>            
+        </section>
+        <footer>
+            <p>Copyright NAVER Corp. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

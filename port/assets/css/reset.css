@@ -1,0 +1,98 @@
+/* reset */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, textarea, 
+button, form, figure, figcaption {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+/* a 留곹겕 珥덇린�� */
+a {color: #222; text-decoration: none;}
+
+/* �고듃 珥덇린�� */
+body, input, textarea, select, button, table{
+	font-family: 'Oswald', sans-serif;
+	color: #222;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+
+/* �고듃 �ㅽ��� 珥덇린�� */
+em, address {font-style: normal;}
+
+
+/* 釉붾┸湲고샇 珥덇린�� */
+dl,ul,li,ol,menu {list-style: none;}
+
+            
+
+/* �쒕ぉ �쒓렇 珥덇린�� */
+h1,h2,h3,h4,h5,h6{
+	font-size: 13px;
+	font-weight: normal;
+}
+
+/* 踰꾪듉 珥덇린�� */
+button{border: 0;}
+
+/* 諛섏쓳�� �대�吏� */
+img,video{width: 100%;}
+
+/* �뚮몢由� 珥덇린�� */
+img, fieldset{ border: 0 none;}
+
+/* 踰꾪듉 珥덇린�� */
+button{ border: 0;}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix::before, .clearfix::after{
+	display: block;
+	content: '';
+	line-height: 0;
+}
+.clearfix::after{clear: both;}
+
+
+
+
+/* IR �④낵 */
+/* �섎��덈뒗 �대�吏��� ��泥� �띿뒪�몃� �쒓났�섎뒗 寃쎌슦 */
+.ir_pm{
+	display: inline-block;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+}
+/* �섎��덈뒗 �대�吏��� ��泥� �띿뒪�몃줈 �대�吏�媛� �놁뼱�� ��泥� �띿뒪�몃� 蹂댁뿬二쇨퀬�� �� �� */
+.ir_wa{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+/* ��泥� �띿뒪�멸� �꾨땶 �묎렐�깆쓣 �꾪븳 �④� �띿뒪�몃� �쒓났�� �� */
+.ir_so{
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	text-indent: -9999px;
+}
+
+
+/* margin, padding */
+.mt10{margin-top: 10px !important;}
+.mt15{margin-top: 15px !important;}
+.mt20{margin-top: 20px !important;}
+.mt25{margin-top: 25px !important;}
+.mt30{margin-top: 30px !important;}
+.mt35{margin-top: 35px !important;}
+.mt40{margin-top: 40px !important;}
+.mt45{margin-top: 45px !important;}
+.mt50{margin-top: 50px !important;}

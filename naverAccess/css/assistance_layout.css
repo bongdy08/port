@@ -1,0 +1,100 @@
+.wrap{
+    position: relative;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+
+.content{
+    width: 100%;
+}
+.content .top-visual{
+    padding-top: 350px;
+    padding-bottom: 150px;
+    text-align: center;
+    background: url(../image/assistance_img.jpg) no-repeat top center;
+}
+.content .top-visual p{
+    color: white;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+
+.content .container > div{
+    padding-bottom: 60px;
+}
+.content .container h2{
+    padding: 60px 0 30px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.content .container h3{
+    padding-bottom: 25px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(10, 163, 2);
+}
+.content .container h4{
+    padding-bottom: 25px;
+    font-size: 24px;
+}
+.content .container h5{
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    line-height: 30px;
+}
+table{
+    border-top: 2px solid rgb(34, 34, 34);
+    border-bottom: 2px solid rgb(34, 34, 34);
+}
+table th{
+    padding: 15px;
+    border-bottom: 1px solid rgb(34, 34, 34);
+    font-size: 18px;
+}
+table td{
+    padding: 15px;
+    border: 1px solid rgb(218, 218, 218);
+    text-align: center;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+table td a{
+    font-size: 16px;
+    color: rgb(10, 163, 2);
+    text-decoration: underline;
+}
+table th:first-child, table td:first-child {
+    border-left: 0;
+  }
+table th:last-child, table td:last-child {
+    border-right: 0;
+}
+
+.assi4 .container div .tip{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.assi4 .container div .tip::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(../image/icons.png) no-repeat -180px 0;
+    vertical-align: top;
+}
+
+footer{
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+}
+footer p{
+    color: rgb(195, 195, 195);
+    font-size: 14px;
+    text-align: center;
+}
