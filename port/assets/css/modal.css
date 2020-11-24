@@ -35,12 +35,12 @@
 #modal .modal-cont{
     position: relative;
     display: flex; align-items: center; justify-content: center;
-    width: 95vw;  height: 40vw;
+    width: 90%;  height: 70%;
     margin: 0 auto;
 }
 #modal .modal-cont .code-cont{
-    width: 85%; 
-    height: 40vw;
+    width: 100%;
+    height: 100%;
 }
 .modal-cont .tab{
     position: relative;
@@ -91,7 +91,6 @@
 #modal.out{
     visibility: hidden;
 }
-
 
 pre, code {
 	margin: 0;

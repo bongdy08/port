@@ -14,10 +14,10 @@
             
 /* layout */
 body{
-    /* background: #dddad7; */
     height: auto;
 }
 #contents { 
+    overflow: hidden;
 }
 #section1 {
     position: relative; 
@@ -579,81 +579,27 @@ body{
     display: block;
 }
 
-
-
-/* section5 */
-.sec5 ul{
-    width: 100%;
-    font-size: 0;
-}
-.sec5 ul li{
-    position: relative;
-    display: inline-block;
-    width: 33.333333%;
-}
-.sec5 ul li > div{
-    width: 20vw; height: 20vw;
-    background-color: #fff;
-    border-radius: 50%;
-}
-.sec5 ul li .front{
-    background: url(../img/6.jpg) no-repeat center center;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: all .5s ease-in-out;
-    backface-visibility: hidden;
-}
-.sec5 ul li .back{
-    position: absolute; top: 0; left: 0;
-    background-color: #fff;
-    z-index: -1;
-    transform-style: preserve-3d;
-    transform: rotateY(-180deg);
-    transition: all .5s ease-in-out;
-    backface-visibility: hidden;
-}
-.sec5 ul li:hover .front{
-    transform: rotateY(180deg);
-}
-.sec5 ul li:hover .back{
-    transform: rotateY(0deg);
-    z-index: 1;
-}
-.sec5 ul li .back p{
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-}
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* .sec5 */
 .sec5 .sitemap-top{
     padding: 5vw 0 10vw;
 }
 .sec5 .sitemap-top p{
     margin-bottom: -0.4em;
-    font-size: 4vw; font-weight: 400;
+    font-size: 65px; font-weight: 400;
 }
 .sec5 .sitemap-bottom ul{
     display: inline-block;
+    width: 100%;
     vertical-align: top;
 }
 .sec5 .sitemap-bottom .deck1 > li{
+    display: inline-block;
     width: 25%;
 }
 .sec5 .sitemap-bottom .deck1 > li h4{
     margin-bottom: 5%;
     color: #231f20;
-    font-size: 1.2vw; font-weight: 400;
+    font-size: 20px; font-weight: 400;
     cursor: default;
 }
 .sec5 .sitemap-bottom .deck1 li .deck2 li{
@@ -662,7 +608,7 @@ body{
 }
 .sec5 .sitemap-bottom .deck1 li .deck2 li a{
     color: #231f20;
-    font-size: 1vw; font-weight: 100;
+    font-size: 16px; font-weight: 100;
 }
 .sec5 .sitemap-bottom .deck1 li .menu3 li a::after{
     content: '';
@@ -738,49 +684,70 @@ body{
        }
 }
 @media (max-width: 768px){
-    #section4{
-        height: 6000px;
-    }
-    .sec4 .panels .panel{
-        display: block;
-    }
-    .sec4 .panels .panel > div{
-        height: 50%;
-    }
+    #section4{ height: 6000px; }
+    .sec4 .panels .panel{ display: block; }
+    .sec4 .panels .panel > div{ height: 50%; }
     .sec4 .panels .panel .slide-left-wraper{
-        display: flex;
-        justify-content: center;
-        align-items: center;    
+        display: flex; justify-content: center; align-items: center;    
     }
     .sec4 .panels .panel .ani_ttl p:last-child{
-        margin-top: -3%;
+        margin-top: -1%;
     }
     .sec4 .panels .panel .ani_ttl{
-        height: 22%;
-        margin-right: 2%;
-        margin-bottom: 0;
+        height: 23%;
+        margin-right: 2%; margin-bottom: 0;
     }
     .sec4 .panels .panel .ani_desc{
         height: 12%;
-        margin-right: 2%;
-        margin-bottom: 0;
+        margin-right: 2%; margin-bottom: 0;
     }
     .sec4 .panels .panel .slide-right-wraper ul{
-        margin-right: 2%;
-        margin-bottom: 0;
+        margin-right: 2%; margin-bottom: 0;
         height: 45%;
     }
+
+    #modal .close-btn{width: 4.5vw; height: 4.5vw;}
     #modal .close-btn div,
     #modal .close-btn div::before{
         width: 4.5vw;
     }
+    .modal-cont .tab{ height: 4.5vw; }
+    .modal-cont .tab .tablinks{ line-height: 4.5vw;}
+
+    .sec5 .sitemap-top p{ font-size: 45px; }
+    
 }
 @media (max-width: 600px){
-    #section4{
-        height: 4000px;
+    #section4{ height: 4000px; }
+    .sec4 .txtWrap h2 em{font-size: 16vw;}
+
+    #modal .close-btn div,
+    #modal .close-btn div::before{
+        height: 0.4vw;
     }
 }
-@media (max-width: 480px){}
+@media (max-width: 480px){
+    .sec5 .sitemap-top p{ font-size: 27px; }
+    .sec5 .sitemap-bottom .deck1 > li{
+        display: block;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .sec5 .sitemap-bottom .deck1 > li h4{
+        margin-bottom: 2%;
+    }
+    .sec5 .sitemap-bottom .deck1 li .menu3 li{
+        display: inline-block;
+    }
+
+    #modal .close-btn{width: 6.5vw; height: 6.5vw;}
+    #modal .close-btn div,
+    #modal .close-btn div::before{
+        width: 6.5vw; height: 0.6vw;
+    }
+    .modal-cont .tab{ height: 6.5vw; }
+    .modal-cont .tab .tablinks{ line-height: 6.5vw;}
+}
 @media (max-width: 320px){
     #section4{
         height: 3000px;

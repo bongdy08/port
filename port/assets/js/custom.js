@@ -37,7 +37,7 @@ function eventBind(){
         var offset = 50
         if(index == 0){
             $("html, body").animate({
-                scrollTop : $("#section1").offset().top + offset}, 500);
+                scrollTop : $("#section1").offset().top}, 500);
         }
         else if(index == 1){
             $("html, body").animate({
