@@ -1,17 +1,19 @@
 .wrap{
     position: relative;
     width: 100%;
+    min-width: 1280px;
 }
 .container{
     margin: 0 auto;
     width: 1280px;
 }
 
-
+/* top-visual */
 .content{
     width: 100%;
 }
 .content .top-visual{
+    width: 100%;
     padding-top: 350px;
     padding-bottom: 150px;
     margin-bottom: 90px;
@@ -24,23 +26,20 @@
     line-height: 35px;
 }
 
+/* service1 */
 .content .service1{
     padding: 20px;
 }
 .content .service1 .container > div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
     padding: 40px 0;
     border-bottom: 1px solid rgb(234, 234, 234);
 }
 .content .service1 .container > div:last-child{
     border-bottom: 0;
-}
-.content .service1 .container div:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-.content .service1 .container div .img-area{
-    float: left; 
 }
 .content .service1 .container div .img-area span{
     display: inline-block;
@@ -87,6 +86,7 @@
     line-height: 26px;
 }
 
+/* service2 */
 .content .service2{
     padding: 100px 0;
     background-color: rgb(235, 235, 235);
@@ -103,6 +103,7 @@
 .content .service2 .container .service-list{
 }
 .content .service2 .container .service-list li{
+    position: relative;
     display: inline-block;
     margin: 0 20px 20px 0;
     width: 285px;
@@ -175,30 +176,31 @@
 }
 
 .content .service2 .container .service-list li.service2_11 .nomal-area{
-    display: block;
+    opacity: 1;
 }
 .content .service2 .container .service-list li.service2_11 .hover-area{
-    display: none;
+    opacity: 0;
 }
 .content .service2 .container .service-list li.service2_11:hover .nomal-area{
-    display: none;
+    opacity: 0;
 } 
 .content .service2 .container .service-list li.service2_11:hover .hover-area{
-    display: block;
+    opacity: 1;
 } 
-.content .service2 .container .service-list li .nomal-area{
-
-}
-.content .service2 .container .service-list li .nomal-area:hover{
-
-}
 .content .service2 .container .service-list li .hover-area{
-    height: 100%;
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 100%;
     background-color: rgb(25, 25, 25);
 }
+.content .service2 .container .service-list li .hover-area > div{
+    height: 100%;
+    padding: 93px 0;
+}
 .content .service2 .container .service-list li .hover-area p{
-    /* padding: 0; */
-    margin: 25px 0;
+    padding: 0;
+}
+.content .service2 .container .service-list li .hover-area p:first-child{
+    margin-bottom: 10px;
 }
 .content .service2 .container .service-list li .hover-area p a{
     display: inline-block;
@@ -209,6 +211,7 @@
     font-size: 18px;
 }
 
+/* footer */
 footer{
     padding: 50px;
     background-color: rgb(34, 34, 34);

@@ -12,21 +12,23 @@
     padding: 30px 0;
     width: 100%;
 }
-.header .container .nav::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-.header .container .nav .left-side{
-    float: left;
+
+.header .container .nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 .header .container .nav .left-side span{
     color: white;
     font-size: 19px;
     font-weight: 600;
 }
-.header .container .nav .right-side{
-    float: right;
+.header .container .nav .left-side span strong{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    top: 3px;
 }
 .header .container .nav .right-side span{
     margin: 0 20px;

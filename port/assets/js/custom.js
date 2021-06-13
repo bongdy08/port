@@ -62,9 +62,6 @@ function eventBind(){
         var sec3Position = $("#section3").offset().top - $(window).height() / 2;
         var panel1Position = $(".sec3 .panel1").offset().top - $(window).height() / 2;
         var panel2Position = $(".sec3 .panel2").offset().top - $(window).height() / 2;
-        var panel3Position = $(".sec3 .panel3").offset().top - $(window).height() / 2;
-        var panel4Position = $(".sec3 .panel4").offset().top - $(window).height() / 2;
-        var panel5Position = $(".sec3 .panel5").offset().top - $(window).height() / 2;
     
         if(initPosition > sec2Position){
             gsap.to(".sec2 h2 span", {opacity:1, y:0, duration: 1, ease: "back.out(1.7)", stagger: 0.1});
@@ -92,27 +89,6 @@ function eventBind(){
             gsap.to(".sec3 .panel2 .work_ttl", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.2});
             gsap.to(".sec3 .panel2 .work_desc", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.5});
             gsap.to(".sec3 .panel2 .btn", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.8});
-        }
-        if(initPosition > panel3Position){
-            $(".sec3 .panel3 .imgWrap").addClass("show")
-            gsap.to(".sec3 .panel3 .deco", {opacity:1, y:0, duration: 1, ease: "power4.out"});
-            gsap.to(".sec3 .panel3 .work_ttl", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.2});
-            gsap.to(".sec3 .panel3 .work_desc", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.5});
-            gsap.to(".sec3 .panel3 .btn", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.8});
-        }
-        if(initPosition > panel4Position){
-            $(".sec3 .panel4 .imgWrap").addClass("show")
-            gsap.to(".sec3 .panel4 .deco", {opacity:1, y:0, duration: 1, ease: "power4.out"});
-            gsap.to(".sec3 .panel4 .work_ttl", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.2});
-            gsap.to(".sec3 .panel4 .work_desc", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.5});
-            gsap.to(".sec3 .panel4 .btn", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.8});
-        }
-        if(initPosition > panel5Position){
-            $(".sec3 .panel5 .imgWrap").addClass("show")
-            gsap.to(".sec3 .panel5 .deco", {opacity:1, y:0, duration: 1, ease: "power4.out"});
-            gsap.to(".sec3 .panel5 .work_ttl", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.2});
-            gsap.to(".sec3 .panel5 .work_desc", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.5});
-            gsap.to(".sec3 .panel5 .btn", {opacity:1, y:0, duration: 0.5, ease: "power4.out", delay: 0.8});
         }
 
         // skroll.js를 사용한 가로모드
